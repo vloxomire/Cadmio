@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorAccent"
-    tools:context=".CadmioActivity">
+    tools:context=".Interfaz.CadmioActivity">
 
     <EditText
         android:id="@+id/eTNombre"
