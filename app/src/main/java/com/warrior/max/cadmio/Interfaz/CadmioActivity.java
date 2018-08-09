@@ -12,11 +12,34 @@ import com.warrior.max.cadmio.R;
 
 public class CadmioActivity extends AppCompatActivity {
 
-    private EditText eTNombre, eTApwllido, eTDni;
+    private EditText eTNombre, eTApellido, eTDni;
     private Button bGuardar, bObtener;
     private ListenerBGuardar listenerBGuardar;
     private ListenerBObtener listenerBObtener;
 
+    public EditText geteTNombre() {
+        return eTNombre;
+    }
+
+    public void seteTNombre(EditText eTNombre) {
+        this.eTNombre = eTNombre;
+    }
+
+    public EditText geteTApellido() {
+        return eTApellido;
+    }
+
+    public void seteTApellido(EditText eTApellido) {
+        this.eTApellido = eTApellido;
+    }
+
+    public EditText geteTDni() {
+        return eTDni;
+    }
+
+    public void seteTDni(EditText eTDni) {
+        this.eTDni = eTDni;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +47,7 @@ public class CadmioActivity extends AppCompatActivity {
         setContentView(R.layout.cadmio);
 
         eTNombre =findViewById(R.id.eTNombre);
-        eTApwllido =findViewById(R.id.eTApellido);
+        eTApellido =findViewById(R.id.eTApellido);
         eTDni = findViewById(R.id.eTDni);
         bGuardar = findViewById(R.id.bGuardar);
         bObtener = findViewById(R.id.bObtener);
